@@ -18,8 +18,6 @@ RUN apt-get install -y --no-install-recommends \
         g++-multilib \
         grep \
         libncurses5-dev \
-        libncurses5-dev \
-        libssl-dev \
         libssl-dev \
         lzop \
         perl \
@@ -33,11 +31,12 @@ RUN apt-get install -y --no-install-recommends \
         subversion \
         swig \
         time \
+		u-boot-tools \
         unzip \
         xxd \
         zlib1g-dev
-
-RUN pip3 install pycrypto
+RUN apt install -y --no-install-recommends vim wget git
+RUN pip3 install pycryptodomex pycrypto
 RUN ln -fs /usr/bin/python3 /usr/bin/python
 
 RUN rm -rf /var/lib/apt/lists/* && apt-get clean
