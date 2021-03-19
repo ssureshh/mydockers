@@ -1,6 +1,6 @@
 #!/bin/sh
 
-IMAGE=debian-minimal
+IMAGE=pico-dev
 HOST_DIR=/home/suresh/play/pico-dev
 CONT_DIR=/home/dockr/pico-dev
 

@@ -35,7 +35,8 @@ RUN apt-get install -y --no-install-recommends \
         unzip \
         xxd \
         zlib1g-dev
-RUN apt install -y --no-install-recommends vim wget git
+RUN apt install -y --no-install-recommends cpio rsync
+RUN apt install -y --no-install-recommends wget
 RUN pip3 install pycryptodomex pycrypto
 RUN ln -fs /usr/bin/python3 /usr/bin/python
 
