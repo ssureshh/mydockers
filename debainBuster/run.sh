@@ -1,6 +1,6 @@
 #!/bin/sh
 
-IMAGE=debian-minimal
+IMAGE=debian-buster
 HOST_DIR=/home/suresh/play/tvbox
 CONT_DIR=/home/dockr/tvbox
 

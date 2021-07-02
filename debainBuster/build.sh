@@ -1,6 +1,6 @@
 #!/bin/sh
 
-imagename="debian-minimal"
+imagename="debian-buster"
 dkr_uid=$(id -u)
 dkr_gid=$(id -g)
 dkr_user="dockr"
